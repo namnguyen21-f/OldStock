@@ -1,0 +1,17 @@
+{
+  "rules": {
+    ".read": true,  // 2021-4-1
+    ".write": true,  // 2021-4-1
+    "Users": {
+      ".read": true,
+      ".write": "(auth!=null)",
+      ".indexOn" : ["id"]
+      },
+    "MyProducts": {
+      ".read": true,
+      ".write": "(auth!=null)",
+      ".indexOn" : ["userID"]
+      }
+  }
+  
+}

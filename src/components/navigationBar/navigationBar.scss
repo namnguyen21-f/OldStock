@@ -1,0 +1,47 @@
+.navBar{
+    width: 100%;
+    height: fit-content;
+    padding: .5rem 0;
+    background-color: #131921;    
+    background: #fff;
+    .navBar__logo{
+        width: 100%;
+        padding: 1.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            width: 100px;
+            height: auto;
+        }
+    }
+    .navBar__main{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .navBar__main__item{
+            width: 90%;
+            padding: 1rem 2rem 1rem 2rem;
+            *{
+                display: inline-block;
+            }
+            p{
+                margin-left: .875rem;
+                font-size: 1.1rem;
+            }
+        }
+        .selected{
+            border-radius: 0 1rem 1rem 0;
+            border-bottom: 1xp solid #333;
+            background: linear-gradient(to right,#8971ea,#7f72ea,#7574ea,#6a75e9,#5f76e8);
+            box-shadow: 0 7px 12px 0 #8971ea;
+            color: #fff;
+        }
+
+    }
+
+
+
+}
+

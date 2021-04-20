@@ -1,0 +1,67 @@
+[debug] [2021-04-16T10:45:59.931Z] ----------------------------------------------------------------------
+[debug] [2021-04-16T10:45:59.932Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-04-16T10:45:59.933Z] CLI Version:   9.10.0
+[debug] [2021-04-16T10:45:59.933Z] Platform:      win32
+[debug] [2021-04-16T10:45:59.933Z] Node Version:  v14.13.0
+[debug] [2021-04-16T10:45:59.934Z] Time:          Fri Apr 16 2021 17:45:59 GMT+0700 (Indochina Time)
+[debug] [2021-04-16T10:45:59.934Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-16T10:45:59.941Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-16T10:45:59.941Z] > authorizing via signed-in user (proitem123@gmail.com)
+[info] i  emulators: Starting emulators: database {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project old-stock-trade. This may result in unexpected behavior. 
+[debug] [2021-04-16T10:45:59.967Z] [hub] writing locator at C:\Users\Admin\AppData\Local\Temp\hub-old-stock-trade.json
+[debug] [2021-04-16T10:45:59.997Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/old-stock-trade [none]
+[debug] [2021-04-16T10:46:00.513Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/old-stock-trade 200
+[debug] [2021-04-16T10:46:00.514Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/old-stock-trade {"projectId":"old-stock-trade","projectNumber":"796371651239","displayName":"Old Stock Trade","name":"projects/old-stock-trade","resources":{"hostingSite":"old-stock-trade","realtimeDatabaseInstance":"old-stock-trade-default-rtdb","storageBucket":"old-stock-trade.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-04-16T10:46:00.514Z] database rules config:  [{"instance":"old-stock-trade-default-rtdb","rules":"D:\\RNUI\\ecommerce\\database.rules.json"}]
+[debug] [2021-04-16T10:46:00.517Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-04-16T10:46:00.517Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-04-16T10:46:00.517Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2021-04-16T10:46:00.517Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Admin\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.7.2.jar","--host","localhost","--port",9000],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Admin\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.7.2.jar\",\"--host\",\"localhost\",\"--port\",9000],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[info] i  ui: downloading ui-v1.4.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.4.2.zip..."}}
+[debug] [2021-04-16T10:46:01.853Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.2.zip 
+[debug] [2021-04-16T10:46:02.000Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.2.zip 200
+[debug] [2021-04-16T10:46:02.000Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.2.zip [stream]
+[debug] [2021-04-16T10:46:02.685Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-04-16T10:46:02.686Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-04-16T10:46:02.686Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Admin\\.cache\\firebase\\emulators\\ui-v1.4.2\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Admin\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.4.2\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-04-16T10:46:02.795Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[debug] [2021-04-16T10:46:02.953Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=old-stock-trade-default-rtdb  
+ {
+  "rules": {
+    ".read": true,  // 2021-4-1
+    ".write": true,  // 2021-4-1
+    "Users": {
+      ".read": true,
+      ".write": "(auth!=null)",
+      ".indexOn" : ["id"]
+      },
+    "MyProducts": {
+      ".read": true,
+      ".write": "(auth!=null)",
+      ".indexOn" : ["userID"]
+      }
+  }
+  
+}
+[debug] [2021-04-16T10:46:03.303Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"old-stock-trade-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"2608915f-a30c-4554-b1f6-3bb762925c1d"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┬────────────────────────────────┐
+│ Emulator │ Host:Port      │ View in Emulator UI            │
+├──────────┼────────────────┼────────────────────────────────┤
+│ Database │ localhost:9000 │ http://localhost:4000/database │
+└──────────┴────────────────┴────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

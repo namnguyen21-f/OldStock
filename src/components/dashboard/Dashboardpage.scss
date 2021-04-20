@@ -1,0 +1,154 @@
+.Dashboard{
+    padding: 2.5rem 1.5rem 1rem 1.5rem;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .Dashboard__title{
+        .h4{
+            margin-bottom: .25rem!important;
+            color: #1c2d41!important;
+        }
+        p{
+            color: #555;
+        }
+        margin-bottom: 2.5rem;
+        font-family: sans-serif;
+        color: #1c2d41!important;
+    }
+
+    .Dashboard__statistic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        .Dashboard__statistic__item{
+            padding: 1.5rem 1.5rem;
+            min-width: 25%;
+            background-color: #fff;
+            background-clip: border-box;
+            box-shadow: 0 0 12px 2px #edf2f9;
+            p{
+                color: #9eabc0!important;
+                font-weight: 600;
+                font-family: sans-serif;
+            }
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .Dashboard__chart{
+        border-radius: 3px;
+        display: flex;
+        .Dashboard__chart__1,.Dashboard__chart__2{
+            background-color: #fff;
+            box-shadow: 0 0 12px 2px #f2f2f2;
+            h3{
+                font-family: "Rubik,sans-serif";
+                font-weight: 600;
+                margin-bottom: .875rem;
+            }
+            padding: 1rem;
+            width: 60%;
+            height: auto;   
+        }
+
+        .Dashboard__chart__2{
+            width: 35%;
+            margin-left: 5%;
+            height: 100%;
+            canvas{
+                width: auto;
+                margin-right: auto;
+                margin-left: auto;
+                height: auto;
+            }
+            height: 100%;
+            div{
+                width: 80%;
+                margin-left: 10%;
+                margin-top: 2rem;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    list-style: none;
+                    
+                    li i{
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        margin-right: 3px;
+                        background-color: #333 !important;
+                        display: inline-block;
+                    }
+                    li:nth-of-type(odd){
+                        color: #9eabc0;
+                        text-transform: capitalize;
+                        font-weight: 400;
+                    }
+                    li:nth-of-type(even){
+                        color: #1c2d41;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .Dashboard__table{
+        box-shadow: 0 0 12px 2px #edf2f9;
+        margin-top: 1.5rem;
+        background-color: #fff;
+        padding: 1.5rem 1rem;
+        .Dashboard__table__rcproduct{
+            margin-top: 1.5rem;
+            table{
+                color: #9eabc0;
+                table-layout: fixed;
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #888;
+                thead, tfoot {
+                    color: #333;
+                    white-space: nowrap;
+                    font-weight: 500;
+                }
+                thead{
+                    border-bottom: 1px solid #777;
+                }
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                  }
+                thead th:nth-child(1) {
+                    width: 25%;
+                }
+                thead th:nth-child(2) {
+                    width: 10%;
+                }
+                thead th:nth-child(3) {
+                    width: 20%;
+                }
+                thead th:nth-child(4) {
+                    width: 15%;
+                }
+                thead th:nth-child(5) {
+                    width: 30%;
+                }
+                th, td {
+                    padding: .875rem;
+                }
+                tbody td {
+                text-align: center;
+                }
+                
+                tfoot th {
+                text-align: right;
+                }
+                  
+                  
+            }
+        }
+    }
+}

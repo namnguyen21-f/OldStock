@@ -1,0 +1,24 @@
+.HomePage{
+    width: 100%;
+    display: flex;
+    .HomePage__leftSide{
+        width: 18%;
+        background: #fff;
+        min-height: 100%;
+        box-shadow: 0 3px 9px 0 #333;
+        height: 100vh;
+    }
+
+    .HomePage__rightSide{
+        width: 82%;
+        background: #f9fbfd;
+        min-height: 100%;
+        .HomePage__rightSide__featureBar{
+            width: 100%;
+            height: 60px;
+            padding: .5rem 1rem;
+            border-bottom: 1px solid #edf2f9;
+        }
+        
+    }
+}
